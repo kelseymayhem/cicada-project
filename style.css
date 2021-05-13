@@ -6,3 +6,7 @@ h1 {
 nav {
   font-family: "Special Elite", cursive !important;
 }
+
+.album-img {
+  background-image: (image(img/album-cover));
+}
