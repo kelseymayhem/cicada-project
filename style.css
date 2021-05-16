@@ -7,3 +7,12 @@ nav {
   font-family: "Special Elite", cursive !important;
   color: #f5e4c0 !important;
 }
+
+ul {
+  font-family: "Special Elite", cursive;
+  list-style-type: none;
+}
+
+body {
+  background: url(album-cover.jpg);
+}
