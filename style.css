@@ -15,4 +15,7 @@ ul {
 
 body {
   background-image: url(img/album-cover.jpg);
+  background-repeat: no-repeat;
+  background-position: absolute;
+  background-size: cover;
 }
