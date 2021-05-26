@@ -1,15 +1,15 @@
 h1 {
-  font-family: "Special Elite", cursive;
+  font-family: "American Typewriter", sans-serif;
   padding-left: 25px;
 }
 
 nav {
-  font-family: "Special Elite", cursive !important;
-  color: #f5e4c0 !important;
+  font-family: "American Typewriter", sans-serif !important;
+  color: #956b51 !important;
 }
 
 ul {
-  font-family: "Special Elite", cursive;
+  font-family: "American Typewriter", sans-serif;
   list-style-type: none;
 }
 
