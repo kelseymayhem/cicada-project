@@ -5,7 +5,8 @@ h1 {
 
 nav {
   font-family: "American Typewriter", sans-serif !important;
-  color: #956b51 !important;
+  background-color: sienna !important;
+  background: none;
 }
 
 ul {
