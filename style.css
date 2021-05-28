@@ -3,6 +3,10 @@ h1 {
   padding-left: 25px;
 }
 
+p {
+  font-family: "American Typewriter", sans-serif;
+}
+
 nav {
   font-family: "American Typewriter", sans-serif !important;
   background-color: sienna !important;
