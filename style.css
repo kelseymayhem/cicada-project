@@ -24,3 +24,8 @@ body {
   background-position: absolute;
   background-size: cover;
 }
+
+img {
+  border-radius: 10px;
+  box-shadow: 5px;
+}
