@@ -29,3 +29,7 @@ img {
   border-radius: 10px;
   box-shadow: 5px;
 }
+
+.navbar {
+  background-color: #c2a26c !important;
+}
