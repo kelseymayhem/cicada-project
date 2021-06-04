@@ -29,12 +29,13 @@ audio {
   line-height: 50px;
 }
 
-.lyrics-button {
+.primary-link {
   background-color: #c2a26c;
   border-radius: 25px;
   border: #c2a26c;
   font-family: "American Typewriter", sans-serif !important;
   color: #372410;
+  text-decoration: none;
 }
 
 .lyric-links {
