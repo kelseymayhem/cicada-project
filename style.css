@@ -18,16 +18,15 @@ ul {
   list-style-type: none;
 }
 
-body {
-  background-image: url("img/album-cover.jpg");
-  background-repeat: no-repeat;
-  background-position: absolute;
-  background-size: cover;
-}
-
 img {
   border-radius: 10px;
   box-shadow: 5px;
+}
+
+audio {
+  width: 200px;
+  height: 25px;
+  line-height: 50px;
 }
 
 .navbar {
@@ -37,4 +36,13 @@ img {
 .lyric-links {
   text-decoration: none;
   color: black;
+  line-height: 40px;
+}
+
+.lyric-links:hover {
+  color: #c2a26c;
+}
+
+a {
+  cursor: url("img/cicada-cursor.png"), default;
 }
