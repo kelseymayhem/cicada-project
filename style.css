@@ -33,3 +33,8 @@ img {
 .navbar {
   background-color: #c2a26c;
 }
+
+.lyric-links {
+  text-decoration: none;
+  color: black;
+}
