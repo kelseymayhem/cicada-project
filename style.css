@@ -8,8 +8,11 @@ p {
 }
 
 nav {
+  overflow: auto;
+  text-align: center;
   font-family: "American Typewriter", sans-serif !important;
-  background-color: sienna !important;
+  color: #e4d5b5;
+  background-color: #664827 !important;
   background: none;
 }
 
