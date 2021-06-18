@@ -16,6 +16,13 @@
   background-position: absolute;
   background-size: cover;
 }
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 5vw);
+    grid-gap: 0px;
+}
 </style>
 </head>
 <body>
@@ -26,5 +33,15 @@
     <a href="about.html" class="primary-link">About</a>
     <a href="about.html" class="primary-link">Contact</a>
     <a href="pupal-stage.html" class="primary-link">Pupal Stage</a>
+<footer>
+    <div class="gallery">
+<figure class=”gallery_item">
+    <img src="img/" class="gallery__img" alt="Image 1">
+</figure>
+<figure class="gallery__item gallery__item--2">
+    <img src="img/image-2.jpg" class="gallery__img" alt="Image 2">
+</figure>
+    </div>
+</footer>
 </body>
 </html>
