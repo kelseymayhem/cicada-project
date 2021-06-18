@@ -10,11 +10,9 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 <style>
-    body {
-  background-image: url("img/album-cover-use.jpg");
-  background-repeat: no-repeat;
-  background-position: absolute;
-  background-size: cover;
+.backsplash {
+  background-image: url('img/album-cover-use.jpg') no-repeat;
+  background-size: 100%;
 }
 
 .gallery {
@@ -27,21 +25,27 @@
 </head>
 <body>
     <div class="wrap">
+        <div class="backsplash">
     <a href="index.html" class="primary-link">Home</a>
     <a href="lyrics.html" class="primary-link">Lyrics</a>
     <a href="listen.html" class="primary-link">Listen</a>
     <a href="about.html" class="primary-link">About</a>
     <a href="about.html" class="primary-link">Contact</a>
     <a href="pupal-stage.html" class="primary-link">Pupal Stage</a>
+    </div>
 <footer>
     <div class="gallery">
 <figure class=”gallery_item">
     <img src="img/" class="gallery__img" alt="Image 1">
 </figure>
-<figure class="gallery__item gallery__item--2">
+<figure class="gallery_item">
     <img src="img/image-2.jpg" class="gallery__img" alt="Image 2">
+</figure>
+<figure class="gallery_item">
+    <img src="img/image-3.jpg" class="gallery__img" alt="Image 3">
 </figure>
     </div>
 </footer>
+</div>
 </body>
 </html>
