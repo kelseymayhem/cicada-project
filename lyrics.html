@@ -12,11 +12,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <style>
-body {
-background-image: url("img/album-cover-use.jpg");
-background-repeat: no-repeat;
-background-position: absolute;
-background-size: cover;}
+.background-img {
+  border-radius: 0%;
+  background-image: url('img/album-cover-use.jpg');
+  width: 100vw;
+  height: auto;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative; 
+}
 
  footer {
   overflow: auto;
@@ -26,10 +30,21 @@ background-size: cover;}
   background-color: #a5814b !important;
 }
 
+ul a {
+    font-size: smaller;
+}
+
+.jesus-title {
+    font-size: smaller;
+}
+.side li {
+    padding-left: 0%;
+    display: block;
+    text-align: left;
+}
 </style>
         </head>
 <body>
-        <div class="backsplash">
             <nav>
                 <a href="index.html" class="primary-link">Home</a>
                 <a href="lyrics.html" class="primary-link">Lyrics/Listen</a>
@@ -38,43 +53,40 @@ background-size: cover;}
                 <a href="about.html" class="primary-link">Contact</a>
                 <a href="nymphs.html" class="primary-link">Nymphs</a>
             </nav>
-        </div>
-<div class="container">
-    <div class="wrap">
     <div class="row">
-        <div class="col-6">
+      <div class="col-3"><span class="side">
         <ul>
             <li>
-                1. <a class="lyric-links" href="show-it-to-me.html">Show It To Me </a>
+                01. <a class="lyric-links" href="show-it-to-me.html">Show It To Me </a>
             </li>
             <li>
-                2. <a class="lyric-links" href="she-does-it-all-for-jesus.html">She Does It All For Jesus </a>
+                02. <a class="lyric-links" href="she-does-it-all-for-jesus.html"><span class="jesus-title">She Does It All For Jesus</span> </a>
                 <li><audio class="clip" controls src="audio-clips/She Does It All For Jesus -1 30 sec.mp3"></audio></li>
             </li>
             <li>
-                3. <a class="lyric-links" href="i-worship-you.html">I Worship You</a>
+                03. <a class="lyric-links" href="i-worship-you.html">I Worship You</a>
             </li>
             <li>
-                4. <a class="lyric-links" href="i-feel-beautiful.html">I Feel Beautiful </a>
+                04. <a class="lyric-links" href="i-feel-beautiful.html">I Feel Beautiful </a>
                 <li><audio class="clip" controls src="audio-clips/I Feel Beautiful 30 sec.mp3"></audio></li>
             </li>
             <li>
-                5. <a class="lyric-links" href="dont-you-know.html">Don't You Know</a>
+                05. <a class="lyric-links" href="dont-you-know.html">Don't You Know</a>
                 <li><audio class="clip" controls src="audio-clips/Don't You Know 30 sec.mp3"></audio></li>
             </li>
             <li>
-                6. <a class="lyric-links" href="desire.html">Desire</a> <br>
+                06. <a class="lyric-links" href="desire.html">Desire</a> <br>
                 <li><audio class="clip" controls src="audio-clips/Desire-30.mp3"></audio></li>
             <li>
-                7. <a class="lyric-links" href="girl-like-her.html">Girl Like Her</a>
+                07. <a class="lyric-links" href="girl-like-her.html">Girl Like Her</a>
                 <li><audio class="clip" controls src="audio-clips/Girl Like Her 30 sec.mp3"></audio></li>
             </li>
             <li>
-                8. <a class="lyric-links" href="hey-you.html">Hey You </a>
+                08. <a class="lyric-links" href="hey-you.html">Hey You </a>
                 <li><audio class="clip" controls src="audio-clips/Hey You-1 30 sec.mp3"></audio></li>
             </li>
                 <li>
-                    9. <a class="lyric-links" href="so-hard.html">So Hard</a>
+                    09. <a class="lyric-links" href="so-hard.html">So Hard</a>
                 <li><audio class="clip" controls src="audio-clips/So Hard 30 sec.mp3"></audio></li>
                 </li>
                 <li>
@@ -101,10 +113,9 @@ background-size: cover;}
                 <li><audio class="clip" controls src="audio-clips/I Fell -2 30 sec.mp3"></audio></li>
                 </li>
             </ul>
+        </span></div>
+        <div class="col-9"><img src="img/album-cover-use.jpg" class="background-img" alt="cicada project brood x album cover">
         </div>
-        </div>
-</div>
-</div>
 </div>
 <footer>
     Stores: Amazon, Anghami, Apple Music, MediaNet, Boomplay (beta), Deezer, Instagram/Facebook, YouTube Music, iHeartRadio,

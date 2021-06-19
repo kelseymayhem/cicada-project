@@ -8,12 +8,13 @@ p {
 }
 
 nav {
-  overflow: auto;
-  text-align: center;
+  overflow: auto !important;
+  text-align: center !important;
   font-family: "American Typewriter", sans-serif !important;
   color: #e4d5b5;
   background-color: #a5814b !important;
   background: none;
+  padding: 5px;
 }
 
 ul {
@@ -27,9 +28,9 @@ img {
 }
 
 audio {
-  width: 200px;
-  height: 25px;
-  line-height: 5px;
+  width: 130px;
+  height: 18px;
+  line-height: 1px;
 }
 
 .primary-link {
