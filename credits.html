@@ -34,10 +34,21 @@ footer {
   background-repeat: no-repeat;
   position: relative; 
 }
-.credit-img {
-height: 300px;
-width: 300px;
-border-radius: 0%;
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 6.5vw);
+    grid-gap: 0px;
+}
+
+.gallery_img {
+  border-radius: 0%;
+  width: 33.4vw;
+  height: auto;
+  background-repeat: no-repeat;
+  position: relative;
+  grid-gap: 0px !important;
+  object-fit: cover;
 }
 
 .mayhem {
@@ -59,16 +70,42 @@ border-radius: 0%;
        <header>
            <br>
            <br>
-          <h1>Cicada Project Credits</h1>  
-          <img class="credit-img" src="img/Andrew-Bush-Live-Tracking-Grandmas-Warehouse.jpg" alt="">
-          <img class="credit-img" src="img/Armando-Compean-Bass.jpg" alt="">
-          <img class="credit-img" src="img/Brad-Cobb-Mastering.jpg" alt="">
-          <img class="credit-img" src="img/John-Beverly-Jones-Windward-Alley-Studios.jpg" alt="">
-          <img class="credit-img" src="img/Mitch-Manker-Horns.jpg" alt="">
-          <img class="credit-img" src="img/Tom-Canning-Piano.jpg" alt="">
-          <img class="credit-img" src="img/pete-photos/pete-portrait.jpg" alt="">
-          <img class="credit-img" src="img/shandra-photos/sunny-shandra.jpg" alt="">
+          <h1>Cicada Project Credits</h1> 
             <br>
+            <div class="gallery">
+                <figure class="gallery_item">
+                        <img src="img/pete-photos/pete-portrait.jpg" class="gallery_img" alt="Peter Hughes Snell"></a>
+                </figure>
+                <figure class="gallery_item">
+                        <img src="img/shandra-photos/sunny-shandra.jpg" class="gallery_img" alt="Shandra Beri"></a>
+                </figure>
+                <figure class="gallery_item">
+                        <img src="img/John-Beverly-Jones-Windward-Alley-Studios.jpg" class="gallery_img" alt="John Beverly Jones"></a>
+                </figure>
+            </div>
+            <div class="gallery">
+                <figure class="gallery_item">
+                        <img src="img/Brad-Cobb-Mastering.png" class="gallery_img" alt="Brad Cobb"></a>
+                </figure>
+                <figure class="gallery_item">
+                        <img src="img/Andrew-Bush-sq.png" class="gallery_img" alt="Andrew Bush"></a>
+                </figure>
+                <figure class="gallery_item">
+                        <img src="img/Armando-Compean-Bass.jpg" class="gallery_img" alt="Armando Compean"></a>
+                </figure>
+            </div>
+            <div class="gallery">
+                <figure class="gallery_item">
+                        <img src="img/Mitch-Manker-Horns-sq.png" class="gallery_img"
+                            alt="Mitch Manker"></a>
+                </figure>
+                <figure class="gallery_item">
+                        <img src="img/Tom-Canning-Piano.jpg" class="gallery_img" alt="Tom Canning"></a>
+                </figure>
+                <figure class="gallery_item">
+                        <img src="img/Sinclair-Lott-drums-sq.png" class="gallery_img" alt="Sinclair Lott"></a>
+                </figure>
+            </div>
           <p>
             Show It To Me
             Written by Shandra Beri and Peter Hughes Snell
