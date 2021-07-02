@@ -36,6 +36,21 @@
   grid-gap: 0px !important;
   object-fit: cover;
 }
+
+.track-8 {
+  border-radius: 0%;
+  width: 33.4vw;
+  height: auto;
+  background-repeat: no-repeat;
+  position: relative;
+  grid-gap: 0px !important;
+  object-fit: cover;
+}
+
+.track-8:hover {
+background: url('img/hey-you-hover.png') no-repeat;
+}
+
 </style>
 </head>
 <body>
@@ -53,11 +68,11 @@
     <div class="gallery">
 <figure class= "gallery_item">
     <a href="show-it-to-me.html">
-    <img src="img/show-it-to-me-sq.png" class="gallery_img" alt="a gold coin in the palm of pete's hand"></a>
+   <div class="track-1"><img src="img/show-it-to-me-sq.png" onmouseover="this.src='img/show-it-to-me-hover.png' " onmouseout="this.src='img/show-it-to-me-sq.png' "  class="gallery_img" alt="a gold coin in the palm of pete's hand"></a></div>
 </figure>
 <figure class="gallery_item">
     <a href="she-does-it-all-for-jesus.html">
-    <img src="img/jesus-sq-use.png" class="gallery_img" alt="virgin mary statue"></a>
+    <img src="img/jesus-sq-use.png" onmouseover="this.src='img/jesus-hover.png' " onmouseout="this.src='img/jesus-sq-use.png' "   class="gallery_img" alt="virgin mary statue"></a>
 </figure>
 <figure class="gallery_item">
     <a href="i-worship-you.html">
@@ -85,7 +100,7 @@
 </figure>
 <figure class="gallery_item">
     <a href="hey-you.html">
-    <img src="img/hey-you-sq.png" class="gallery_img" alt="los angeles street scene at night"></a>
+<img src="img/hey-you-sq.png" onmouseover="this.src='img/hey-you-hover.png' " onmouseout="this.src='img/hey-you-sq.png' "  class="gallery_img" alt="los angeles street scene at night"></a>
 </figure>
 <figure class="gallery_item">
     <a href="so-hard.html">
