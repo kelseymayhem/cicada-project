@@ -1,108 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        Cicada Project Lyrics
-    </title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="http://fonts.cdnfonts.com/css/american-typewriter" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <style>
-ul a {
-    font-size: 16px;
-    color: #ECDEC2 !important;
-}
-
- footer {
-  overflow: auto;
-  text-align: center;
-  font-family: "American Typewriter", sans-serif !important;
-  color: #e4d5b5;
-  background-color: #a5814b !important;
- }
- audio {  
-  width: 195px;
-  height: 25px;
-  line-height: 10px; 
-  align-items: center;
-  filter: opacity(45%) drop-shadow(1px 1px 1px #ECDEC2);
-}
-
-ul {
-text-align: center;
-text-transform: lowercase; 
-padding-top: 100px;}
-
-li {
-    padding-bottom: 15px;
-}
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>cicada project brood x album lyrics</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="http://fonts.cdnfonts.com/css/american-typewriter" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<style>
 .background-img {
     border-radius: 0%;
-  background-image: url('img/taste.png');
+  background-image: url('img/album-cover-use.jpg');
   width: 100vw;
   height: auto;
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-position: absolute; }
+  position: relative;
+}
 
-  li a:hover {
-      color: cornflowerblue !important;
-  }
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 6.5vw);
+    grid-gap: 0px;
+}
+
+.gallery_img {
+  border-radius: 0%;
+  width: 33.4vw;
+  height: auto;
+  background-repeat: no-repeat;
+  position: relative;
+  grid-gap: 0px !important;
+  object-fit: cover;
+}
+
+.track-8 {
+  border-radius: 0%;
+  width: 33.4vw;
+  height: auto;
+  background-repeat: no-repeat;
+  position: relative;
+  grid-gap: 0px !important;
+  object-fit: cover; }
+
+.active {
+    color: #8A9FC0 !important;
+}
 </style>
-        </head>
+</head>
 <body>
-              <nav>
-    <a href="index.html" class="primary-link">home</a>
-    <a href="lyrics.html" class="primary-link">taste</a>
+    <nav>
+    <a href="index.html" class="primary-link">casa</a>
+    <a href="listen.html" class="primary-link">taste</a>
+    <a href="lyrics.html" class="primary-link"><span class="active">words</span></a>
     <a href="about.html" class="primary-link">insight</a>
     <a href="credits.html" class="primary-link">who</a>
-    <a href="contact.html" class="primary-link">contact</a>
+    <a href="contact.html" class="primary-link">c'mere</a>
     <a href="nymphs.html" class="primary-link">nymphs</a>
   </nav>
-   <div class="background-img">
-    <ul>
-    <li><a class="lyric-links" href="show-it-to-me.html">01. Show It To Me </a></li>
-    <li><audio class="clip" controls src="audio-clips/Show It To Me 30 sec.mp3"></audio></li>
-    <li><a class="lyric-links" href="she-does-it-all-for-jesus.html">02. She Does It All For Jesus</a></li>
-    <li><audio class="clip" controls src="audio-clips/She Does It All For Jesus -1 30 sec.mp3"></audio></li>
-    <li><a class="lyric-links" href="i-worship-you.html">03. I Worship You</a></li> 
-    <li><audio class="clip" controls src="audio-clips/I Worship You 30 sec.mp3"></audio></li>
-    <li><a class="lyric-links" href="i-feel-beautiful.html">04. I Feel Beautiful </a></li>
-    <li><audio class="clip" controls src="audio-clips/I Feel Beautiful 30 sec.mp3"></audio></li>
-    <li><a class="lyric-links" href="dont-you-know.html">05. Don't You Know</a></li>
-    <li><audio class="clip" controls src="audio-clips/Don't You Know 30 sec.mp3"></audio></li>
-    <li><a class="lyric-links" href="desire.html">06. Desire</a></li>
-    <li><audio class="clip" controls src="audio-clips/Desire-30.mp3"></audio></li>
-    <li><a class="lyric-links" href="girl-like-her.html">07. Girl Like Her</a></li>
-    <li><audio class="clip" controls src="audio-clips/Girl Like Her 30 sec.mp3"></audio></li>
-    <li><a class="lyric-links" href="hey-you.html">08. Hey You</a></li>
-    <li><audio class="clip" controls src="audio-clips/Hey You-1 30 sec.mp3"></audio></li>
-    <li><a class="lyric-links" href="so-hard.html">09. So Hard</a></li>
-    <li><audio class="clip" controls src="audio-clips/So Hard 30 sec.mp3"></audio></li>
-    <li><a class="lyric-links" href="sun-and-rain.html">10. Sun And Rain</a></li>
-    <li><audio class="clip" controls src="audio-clips/Sun And Rain -2 30 sec.mp3"></audio></li>
-    <li><a class="lyric-links" href="even-if.html">11. Even If </a></li>
-    <li><audio class="clip" controls src="audio-clips/Even If 30 sec.mp3"></audio></li>
-    <li><a class="lyric-links" href="diamond-time.html">12. Diamond Time</a></li>
-    <li><audio class="clip" controls src="audio-clips/Diamond-Time-30.mp3"></audio></li>
-    <li><a class="lyric-links" href="queen.html">13. Queen</a></li>
-    <li><audio class="clip" controls src="audio-clips/Queen 30 sec.mp3"></audio></li>
-    <li><a class="lyric-links" href="mr-man.html">14. Mr. Man</a></li>
-    <li><audio class="clip" controls src="audio-clips/Mr. Man -2 30 sec.mp3"></audio></li>
-    <li><a class="lyric-links" href="i-fell.html">15. I Fell </a></li>
-    <li><audio class="clip" controls src="audio-clips/I Fell -2 30 sec.mp3"></audio></li>
-    </ul>
-
-<footer>
-    Stores: Amazon, Anghami, Apple Music, MediaNet, Boomplay (beta), Deezer, Instagram/Facebook, YouTube Music, iHeartRadio,
-    ClaroMusica, iTunes, KKBox, NetEase, Pandora, Saavn, Shazam, Spotify, Tencent, Tidal, TikTok/Resso, Triller (beta),
-    Soundtrack by Twitch, and Yandex Music (beta)
-</footer>  
-</div>
+     <div class="gallery">
+<figure class= "gallery_item">
+    <a href="show-it-to-me.html">
+   <div class="track-1"><img src="img/show-it-to-me-sq.png" onmouseover="this.src='img/show-it-to-me-hover.png' " onmouseout="this.src='img/show-it-to-me-sq.png' "  class="gallery_img" alt="a gold coin in the palm of pete's hand"></a></div>
+</figure>
+<figure class="gallery_item">
+    <a href="she-does-it-all-for-jesus.html">
+    <img src="img/jesus-sq-use.png" onmouseover="this.src='img/jesus-hover.png' " onmouseout="this.src='img/jesus-sq-use.png' "   class="gallery_img" alt="virgin mary statue"></a>
+</figure>
+<figure class="gallery_item">
+    <a href="i-worship-you.html">
+    <img src="img/pete-in-hall-sq.png" onmouseover="this.src='img/worship-hover.png' " onmouseout="this.src='img/pete-in-hall-sq.png' " class="gallery_img" alt="pete snell profile square image"></a>
+</figure> 
+    </div>
+        <div class="gallery">
+<figure class= "gallery_item">
+    <a href="i-feel-beautiful.html">
+    <img src="img/i-feel-beautiful-sq.png" onmouseover="this.src='img/beautiful-hover.png' " onmouseout="this.src='img/i-feel-beautiful-sq.png' " class="gallery_img" alt="pov looking up at beautiful white tree and blue sky"></a>
+</figure>
+<figure class="gallery_item">
+    <a href="dont-you-know.html">
+    <img src="img/dont-you-know.jpg" onmouseover="this.src='img/know-hover.png' " onmouseout="this.src='img/dont-you-know.jpg' " class="gallery_img" alt="pov from beach of sparkling ocean"></a>
+</figure>
+<figure class="gallery_item">
+    <a href="desire.html">
+    <img src="img/desire-sq.png" onmouseover="this.src='img/desire-hover.png' " onmouseout="this.src='img/desire-sq.png' " class="gallery_img" alt="dusky leaf image purples and blacks"></a>
+</figure> 
+    </div>
+            <div class="gallery">
+<figure class= "gallery_item">
+    <a href="girl-like-her.html">
+    <img src="img/girl-like-her-sq.png" onmouseover="this.src='img/girl-hover.png' " onmouseout="this.src='img/girl-like-her-sq.png' " class="gallery_img" alt="shandra beri at 16 holding a camera to the mirror"></a>
+</figure>
+<figure class="gallery_item">
+    <a href="hey-you.html">
+<img src="img/hey-you-sq.png" onmouseover="this.src='img/hey-you-hover.png' " onmouseout="this.src='img/hey-you-sq.png' "  class="gallery_img" alt="los angeles street scene at night"></a>
+</figure>
+<figure class="gallery_item">
+    <a href="so-hard.html">
+    <img src="img/so-hard-sq.png" onmouseover="this.src='img/so-hard-hover.png' " onmouseout="this.src='img/so-hard-sq.png' " class="gallery_img" alt="raw visceral red white gold gash"></a>
+</figure> 
+    </div>
+                <div class="gallery">
+<figure class= "gallery_item">
+    <a href="sun-and-rain.html">
+    <img src="img/sun-and-rain-sq.png" onmouseover="this.src='img/sun-and-rain-hover.png' " onmouseout="this.src='img/sun-and-rain-sq.png' " class="gallery_img" alt="pov from airplane window over the beach"></a>
+</figure>
+<figure class="gallery_item">
+    <a href="even-if.html">
+    <img src="img/even-if-sq.png" onmouseover="this.src='img/even-if-hover.png' " onmouseout="this.src='img/even-if-sq.png' " class="gallery_img" alt="sunlight breaking through the clouds onto the ocean with small island for scale"></a>
+</figure>
+<figure class="gallery_item">
+    <a href="diamond-time.html">
+    <img src="img/diamond-time-sq.png" onmouseover="this.src='img/diamond-hover.png' " onmouseout="this.src='img/diamond-time-sq.png' " class="gallery_img" alt="light dappled image"></a>
+</figure> 
+    </div>
+                <div class="gallery">
+<figure class= "gallery_item">
+    <a href="queen.html">
+    <img src="img/queen.jpg"  onmouseover="this.src='img/queen-hover.png' " onmouseout="this.src='img/queen.jpg' " class="gallery_img" alt="recording booth interior"></a>
+</figure>
+<figure class="gallery_item">
+    <a href="mr-man.html">
+    <img src="img/mr-man-sq.png" onmouseover="this.src='img/man-hover.png' " onmouseout="this.src='img/mr-man-sq.png' " class="gallery_img" alt="pov looking up from below four skyscrapers at clear blue sky"></a>
+</figure>
+<figure class="gallery_item">
+    <a href="i-fell.html">
+    <img src="img/i-fell-sq.png" onmouseover="this.src='img/i-fell-hover.png' " onmouseout="this.src='img/i-fell-sq.png' "class="gallery_img" alt="pete snell profile square image"></a>
+</figure> 
+    </div>
 </body>
 </html>
