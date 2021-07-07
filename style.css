@@ -12,13 +12,11 @@ p {
 }
 
 nav {
-  overflow: auto !important;
+  overflow: auto;
   text-align: center !important;
   font-family: "American Typewriter", sans-serif !important;
   color: #e2d6bf !important;
   background-color: #4c2e1a !important;
-  background: none;
-  padding: 5px;
   text-transform: lowercase !important;
 }
 
@@ -27,18 +25,8 @@ ul {
   list-style-type: none;
 }
 
-img {
-  border-radius: 10px;
-  box-shadow: 5px;
-}
-
-audio {
-  width: 130px;
-  height: 15px;
-  line-height: 1px;
-}
-
 .primary-link {
+  overflow: auto;
   font-family: "American Typewriter", sans-serif !important;
   color: #ecdec2 !important;
   text-decoration: none;
