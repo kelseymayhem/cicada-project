@@ -20,13 +20,6 @@ nav {
   text-transform: lowercase !important;
 }
 
-ul {
-  font-family: "American Typewriter", sans-serif;
-  list-style-type: none;
-  text-align: center;
-  padding-right: 45px;
-}
-
 audio {
   max-width: 225px;
   max-height: 40px;
