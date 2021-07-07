@@ -23,6 +23,14 @@ nav {
 ul {
   font-family: "American Typewriter", sans-serif;
   list-style-type: none;
+  text-align: center;
+  padding-right: 45px;
+}
+
+audio {
+  max-width: 225px;
+  max-height: 40px;
+  opacity: 45%;
 }
 
 .primary-link {
@@ -41,7 +49,7 @@ ul {
 .lyric-links {
   text-decoration: none;
   color: black;
-  line-height: 40px;
+  line-height: 4px;
 }
 
 .lyric-links:hover {
