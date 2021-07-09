@@ -12,21 +12,21 @@
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <style>
   header {
-    height: 50px;
+    height: 3px;
   overflow: auto;
   text-align: center;
   font-family: "American Typewriter", sans-serif !important;
   color: #e4d5b5;
-  background-color: black
+  background-color: #4D2E1A;
 }
 
 footer {
-  height: 80px;
+  height: 50px;
   overflow: auto;
   text-align: center;
   font-family: "American Typewriter", sans-serif !important;
   color: #e4d5b5;
-  background-color: black;
+  background-color: #4D2E1A;
 }
 
 .background-img {
@@ -42,6 +42,36 @@ button {
 border: none;
 background-color: #e4d5b5;
 box-shadow: 50px #A38A5E;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 6.5fr);
+    grid-gap: 0px;
+}
+
+.gallery_img {
+  border-radius: 0%;
+  width: 33.4vw;
+  height: auto;
+  background-repeat: no-repeat;
+  position: relative;
+  grid-gap: 5px !important;
+  object-fit: cover;
+}
+
+.track-8 {
+  border-radius: 0%;
+  width: 33.4vw;
+  height: auto;
+  background-repeat: no-repeat;
+  position: relative;
+  grid-gap: 0px !important;
+  object-fit: cover; }
+
+.active {
+    color: #8A9FC0 !important;
 }
 .active {
     color: #8A9FC0 !important;
@@ -59,7 +89,23 @@ box-shadow: 50px #A38A5E;
     <a href="nymphs.html" class="primary-link">nymphs</a>
   </nav>
 <header></header>
-<img src="img/about-page-yana.png" class="background-img" alt="cicada project brood x album cover">
+<img src="img/about-page-blue.png" class="background-img" alt="cicada project brood x album cover">
+<div class="gallery">
+  <figure class="gallery_item">
+    <a href="">
+      <div class="track-8"><img src="img/badass-guitar-strap.png" class="gallery_img">
+    </a>
+</div>
+</figure>
+<figure class="gallery_item">
+  <a href="">
+    <img src="img/mother-guitar-strap.png" class="gallery_img" alt="virgin mary statue"></a>
+</figure>
+<figure class="gallery_item">
+  <a href="">
+    <img src="img/fucker-guitar-strap.png"  class="gallery_img" alt="pete snell profile square image"></a>
+</figure>
+</div>
 <footer>
 </footer>
 </body>
