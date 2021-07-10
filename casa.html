@@ -17,6 +17,12 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    height: fit-content;
+}
+p {
+    font-size: 8px;
+    padding: 5px;
+    padding-right: 5px;
 }
 
 header {
@@ -29,7 +35,7 @@ background-color: black
 }
 
 footer {
-height: 80px;
+height: 30px;
 overflow: auto;
 text-align: center;
 font-family: "American Typewriter", sans-serif !important;
@@ -72,6 +78,22 @@ ul li {
 }
 .active {
 color: #8A9FC0 !important;
+}
+.mayhem p {
+    text-align: center;
+    font-size: 4px !important;
+}
+
+.mayhem a {
+    text-decoration: none;
+    color: #e4d5b5;
+    font-size: 8px;
+}
+
+.mayhem a:hover {
+  font-size: 14px;
+  color: #8A9FC0 !important;
+  cursor: default;
 }
 </style>
 </head>
@@ -117,7 +139,6 @@ color: #8A9FC0 !important;
         <li><a class="lyric-links" href="i-fell.html">15. I Fell </a></li>
         <li><audio class="clip" controls src="audio-clips/I Fell -2 30 sec.mp3"></audio></li>
     </ul>
-    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-4">
@@ -131,7 +152,9 @@ color: #8A9FC0 !important;
                 </div>
             </div>
         </div>
+    <footer>
+        <p class="mayhem"> <a href="https://github.com/kelseymayhem/cicada-project">Open-source code</a> by <a
+                href="https://kelseymayhem.com/about/">Kelsey Stetson. </a></p>
     </footer>
 </body>
-
 </html>
