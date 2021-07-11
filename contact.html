@@ -26,6 +26,64 @@ footer {
 .active {
 color: #8A9FC0 !important; }
 
+.container-fluid {
+  position: relative;
+  width: 400px;
+  height: 220px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-fluid:before {
+  /* empty pseudo */
+  content: url("img/cmere.png");
+  
+  /* start transparent, include a transition bcuz */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  
+  /* covers the whole div */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+.container-fluid:hover:before {
+  opacity: 1;
+}
+.container-fluid img {
+  position: absolute;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.btn {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  position: relative;
+  padding: 0 40px;
+  height: 40px;
+  line-height: 40px;
+  max-width: 260px;
+  cursor: pointer;
+  z-index: 3;
+}
+.container-fluid:hover .btn {
+  opacity: 1;
+}
+
+.container-fluid:before {
+opacity: 0;
+background: rgba(0, 0, 0, 0.5); }
+
+.container-fluid:hover:before {
+opacity: 1; }
 </style>
 </head>
 <body>
@@ -37,7 +95,10 @@ color: #8A9FC0 !important; }
 <a href="contact.html" class="primary-link"><span class="active">c'mere</span></a>
 <a href="nymphs.html" class="primary-link">nymphs</a>
 </nav>
+<div class="container-fluid"></div>
 <img src="img/cmere.png" class="background-img" alt="">
+<button type="button" class="btn">Click Me</button>
+</div>
 <footer></footer>
 </body>
 </html>
