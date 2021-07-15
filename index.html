@@ -1,109 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cicada Project</title>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="http://fonts.cdnfonts.com/css/american-typewriter" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-<style>
-body {
-    background-image: url(img/casa.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: fit-content;
-}
-p {
-    font-size: 8px;
-    padding: 5px;
-    padding-right: 5px;
-}
-
-header {
-height: 0px;
-overflow: auto;
-text-align: center;
-font-family: "American Typewriter", sans-serif !important;
-color: #e4d5b5;
-background-color: black
-}
-
-footer {
-height: 30px;
-overflow: auto;
-text-align: center;
-font-family: "American Typewriter", sans-serif !important;
-color: #e4d5b5;
-background-color: #4c2e1a;
-}
-
-.background-img {
-border-radius: 0%;
-width: 100vw;
-height: auto;
-background-size: 100% 100%;
-background-repeat: no-repeat;
-position: relative;
-}
-
-ul {
-font-family: "American Typewriter", sans-serif;
-list-style-type: none;
-padding-right: 45px;
-padding-top: 200px;
-text-align: center;
-}
-
-ul li a {
-    text-align: center;
-    text-decoration: none;
-    color: #4c2e1a;
-}
-
-ul li a:hover {
-    color: #8A9FC0;
-    cursor: default;
-}
-
-.lyric-links {
-    color: #D5ECF0;
-}
-.lyric-links-light {
-    color: white;
-    text-decoration: none;
-}
-.lyric-links-dark{
-    color: #283658;
-    text-decoration: none;
-}
-.active {
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cicada project</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="http://fonts.cdnfonts.com/css/american-typewriter" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <style>
+    .background-img {
+        background-size: cover;
+        background-position: center center;
+    }
+    .tracks {
+        display: block;
+        text-align: center;
+        object-position: top;
+    }
+    .active {
 color: #8A9FC0 !important;
 }
-.mayhem p {
-    text-align: center;
-    font-size: 4px !important;
-}
-
-.mayhem a {
-    text-decoration: none;
-    color: #e4d5b5;
-    font-size: 8px;
-}
-
-.mayhem a:hover {
-  font-size: 14px;
-  color: #8A9FC0 !important;
-  cursor: default;
-}
-</style>
+    </style>
 </head>
-
 <body>
     <nav>
         <a href="index.html" class="primary-link"><span class="active">casa</span></a>
@@ -113,81 +33,9 @@ color: #8A9FC0 !important;
         <a href="contact.html" class="primary-link">c'mere</a>
         <a href="nymphs.html" class="primary-link">nymphs</a>
     </nav>
-    <ul>
-        <li><a class="lyric-links" href="show-it-to-me.html">01. Show It To Me </a></li>
-        <li><audio class="clip" controls src="audio-clips/Show It To Me 30 sec.mp3"></audio></li>
-        <li><a class="lyric-links-light" href="she-does-it-all-for-jesus.html">02. She Does It All For Jesus</a></li>
-        <li><audio class="clip" controls src="audio-clips/She Does It All For Jesus -1 30 sec.mp3"></audio></li>
-        <li><a class="lyric-links-light" href="i-worship-you.html">03. I Worship You</a></li>
-        <li><audio class="clip" controls src="audio-clips/I Worship You 30 sec.mp3"></audio></li>
-        <li><a class="lyric-links-light" href="i-feel-beautiful.html">04. I Feel Beautiful </a></li>
-        <li><audio class="clip" controls src="audio-clips/I Feel Beautiful 30 sec.mp3"></audio></li>
-        <li><a class="lyric-links-light" href="dont-you-know.html">05. Don't You Know</a></li>
-        <li><audio class="clip" controls src="audio-clips/Don't You Know 30 sec.mp3"></audio></li>
-        <li><a class="lyric-links-light" href="desire.html">06. Desire</a></li>
-        <li><audio class="clip" controls src="audio-clips/Desire-30.mp3"></audio></li>
-        <li><a class="lyric-links-light" href="girl-like-her.html">07. Girl Like Her</a></li>
-        <li><audio class="clip" controls src="audio-clips/Girl Like Her 30 sec.mp3"></audio></li>
-        <li><a class="lyric-links" href="hey-you.html">08. Hey You</a></li>
-        <li><audio class="clip" controls src="audio-clips/Hey You-1 30 sec.mp3"></audio></li>
-        <li><a class="lyric-links-light" href="so-hard.html">09. So Hard</a></li>
-        <li><audio class="clip" controls src="audio-clips/So Hard 30 sec.mp3"></audio></li>
-        <li><a class="lyric-links" href="sun-and-rain.html">10. Sun And Rain</a></li>
-        <li><audio class="clip" controls src="audio-clips/Sun And Rain -2 30 sec.mp3"></audio></li>
-        <li><a class="lyric-links" href="even-if.html">11. Even If </a></li>
-        <li><audio class="clip" controls src="audio-clips/Even If 30 sec.mp3"></audio></li>
-        <li><a class="lyric-links" href="diamond-time.html">12. Diamond Time</a></li>
-        <li><audio class="clip" controls src="audio-clips/Diamond-Time-30.mp3"></audio></li>
-        <li><a class="lyric-links" href="queen.html">13. Queen</a></li>
-        <li><audio class="clip" controls src="audio-clips/Queen 30 sec.mp3"></audio></li>
-        <li><a class="lyric-links" href="mr-man.html">14. Mr. Man</a></li>
-        <li><audio class="clip" controls src="audio-clips/Mr. Man -2 30 sec.mp3"></audio></li>
-        <li><a class="lyric-links" href="i-fell.html">15. I Fell </a></li>
-        <li><audio class="clip" controls src="audio-clips/I Fell -2 30 sec.mp3"></audio></li>
-</ul>
-<div class="container">
-<div class="row">
-<div class="col-4">
-<ul>
-    <li><a href="">Amazon</a></li>
-    <li><a href="">Anghami</a></li>
-    <li><a href="">AppleMusic</a></li>
-    <li><a href="">MediaNet</a></li>
-    <li><a href="">Boomplay(beta)</a></li>
-    <li><a href="">Deezer</a></li>
-    <li><a href="">Instagram</a></li>
-    <li><a href="">YouTube</a></li>
-</ul>
+    <div class="tracks">
+    <img src="img/SVG/taste.svg.svg" class="background-img" alt="">
+    <audio class="clip" controls src="audio-clips/Show It To Me 30 sec.mp3"></audio>
 </div>
-<div class="col-4">
-<ul>
-    <li><a href="">iHeartRadio</a></li>
-    <li><a href="">ClaroMusica </a></li>
-    <li><a href="">iTunes</a></li>
-    <li><a href="">KKBox</a></li>
-    <li><a href="">NetEase</a></li>
-    <li><a href="">Pandora</a></li>
-    <li><a href="">Saavn</a></li>
-    <li><a href="">Facebook</a></li>
-</ul>
-</div>
-<div class="col-4">
-<ul>
-    <li><a href="">Shazam</a></li>
-    <li><a href="">Spotify</a></li>
-    <li><a href="">Tencent</a></li>
-    <li><a href="">Tidal</a></li>
-   <li><a href=""> TikTok</a></li>
-    <li><a href="">Triller(beta)</a></li>
-    <li><a href="">SoundtrackxTwitch</a></li>
-    <li><a href="">YandexMusic(beta)</a></li>
-</ul>
-</div>
-</div>
-</div>
-<footer>
-<p class="mayhem"> <a href="https://github.com/kelseymayhem/cicada-project">Open-source code</a> by <a
-     href="https://kelseymayhem.com/about/">Kelsey Stetson. </a></p>
-</footer>
 </body>
 </html>

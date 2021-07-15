@@ -8,6 +8,8 @@ p {
 }
 
 nav {
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
   overflow: auto;
   text-align: center !important;
   font-family: "American Typewriter", sans-serif !important;
