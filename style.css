@@ -1,3 +1,7 @@
+body {
+  background-color: #4c2e1b;
+}
+
 h1 {
   font-family: "American Typewriter", sans-serif;
   padding-left: 25px;
@@ -9,7 +13,7 @@ p {
 
 nav {
   justify-content: space-evenly;
-  flex-wrap: nowrap;
+  flex-wrap: nowrap !important;
   overflow: auto;
   text-align: center !important;
   font-family: "American Typewriter", sans-serif !important;
@@ -19,9 +23,9 @@ nav {
 }
 
 audio {
-  max-width: 225px;
-  max-height: 40px;
-  opacity: 55%;
+  max-width: 20vw;
+  max-height: 20px;
+  opacity: 35%;
 }
 
 cursor:hover {
