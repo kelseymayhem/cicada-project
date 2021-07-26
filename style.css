@@ -27,6 +27,13 @@ audio {
   max-height: 20px;
   opacity: 35%;
 }
+a {
+  cursor: default;
+}
+
+a:hover {
+  cursor: default;
+}
 
 cursor:hover {
   cursor: default;
