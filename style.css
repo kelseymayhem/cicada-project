@@ -16,7 +16,6 @@ p {
 nav {
   justify-content: space-evenly;
   flex-wrap: nowrap !important;
-  overflow: auto;
   text-align: center !important;
   font-family: "American Typewriter", sans-serif !important;
   color: #e2d6bf !important;
@@ -24,11 +23,6 @@ nav {
   text-transform: lowercase !important;
 }
 
-audio {
-  max-width: 150px;
-  max-height: 20px;
-  opacity: 35%;
-}
 a {
   cursor: default;
 }
