@@ -15,6 +15,14 @@
   background-color: #4C2F1B;
 }
 
+a:hover {
+  cursor: url('img/cicada-cursor-sm.png') !important;
+}
+
+.container {
+    float: left;
+}
+
 .background-img {
   border-radius: 0%;
   width: 100vw;
@@ -28,23 +36,17 @@ color: #8A9FC0 !important; }
 </style>
 </head>
 <body>
-<nav>
+<nav class=" navbar-text">
 <a href="index.html" class="primary-link">casa</a>
 <a href="lyrics.html" class="primary-link">words</a>
-<a href="about.html" class="primary-link">insight</a>
+<a href="about.html" class="primary-link">musing</a>
 <a href="credits.html" class="primary-link">who</a>
 <a href="contact.html" class="primary-link"><span class="active">c'mere</span></a>
 <a href="nymphs.html" class="primary-link">nymphs</a>
 </nav>
-<div class="container-fluid">
-    <div class="row">
-        <div class="col">
-        <a href="mailto:info@cicadaproject.com"><img src="img/SVG/email-us.svg" class="img-fluid" alt=""></a>
-        </div>
-        <div class="col">
-         <a href="sms://+18184050129"><img src="img/SVG/text-us.svg" class="img-fluid" alt=""></a>
-        </div>
-    </div>
-    </div>
+<figure class="half" style="display:flex">
+<a href="mailto:info@cicadaproject.com"><img src="img/email-us.jpg" class="img-fluid" alt=""></a>
+<a href="sms://+18184050129"><img src="img/text-us.jpg" class="img-fluid" alt=""></a>
+</figure>
 </body>
 </html>
