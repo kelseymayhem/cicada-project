@@ -2,201 +2,238 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cicada project</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="http://fonts.cdnfonts.com/css/american-typewriter" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>cicada project</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="http://fonts.cdnfonts.com/css/american-typewriter" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <style>
-   body {
-        background-color: #4c2e1b;}
-
-        ul li {
-           list-style-type: none;
-           margin: 0 auto;
-        }
-
-    .container-fluid {
-        position: absolute;
-        max-width: 100vw;
-    }
-
-.flex-item {
-    justify-content: center;
+<style>
+ body {
+ background-color: #4c2e1b;}
+ a {
+     text-decoration: none;
+     color: #e2d6bf !important;
+ }
+ a:hover {
+     color: #8A9FC0 !important;
+ }
+@media only all and (min-width: 1200px) and (max-width: 1200px)  {
+audio {
+max-height: 50px;
+max-width: 330px;
+opacity: 25%;
+text-align: center;
+padding-left: 70px;
+} 
+#clip {
+    padding-top: 10px;
 }
 
-.col-md-auto {
-   padding: 28px;
-   color: wheat;
-   padding-top: 41px;
-   position: relative;
+}
+ @media only all and (min-width: 375px) and (max-width: 375px)  {
+audio {
+max-height: 19px;
+max-width: 80px;
+opacity: 25%;
+padding-top: 10px;
+padding-left: 16px;
+} 
+nav {
+    font-size: 8px;
+}
+nav a {
+    float: left;
+}
+p {
+    font-size: 8px;
+}
+.one {
+ padding-top: +4px;
+}
+}
+ @media only all and (min-width: 360px) and (max-width: 360px) {
+audio {
+max-height: 18px;
+max-width: 80px;
+opacity: 25%;
+padding-top: 8px;
+padding-left: 13px;
+} 
+nav {
+    font-size: 8px;
+}
+nav a {
+    float: left;
+}
+p {
+    font-size: 8px;
+}
+.two {
+    padding-top: -4px;
+}
+}
+ @media only all and (min-width: 280px) and (max-width: 320px) {
+audio {
+max-height: 8px;
+max-width: 68px;
+opacity: 25%;
+padding-left: 9px;
+padding-top: -8px;
+} 
+nav {
+    font-size: 4px;
+}
+p {
+    font-size: 4px;
+}
+.col-4 {
+   margin: 0%;
+}
+.one {
+ padding-top: +4px;
+}
+.two {
+    padding-top: -10px;
+}
 }
 
-    .active {
-        color: #8A9FC0 !important;}
-    </style>
+#content {
+background-image: url(img/taste.jpg);
+background-repeat: no-repeat;
+background-size: 100%;
+background-position: top center;
+min-height: fit-content;
+}
+
+.active {
+color: #8A9FC0 !important;}
+</style>
 </head>
 <body>
 <nav class="navbar-text">
-        <a href="index.html" class="primary-link"><span class="active">casa</span></a>
-        <a href="lyrics.html" class="primary-link">words</a>
-        <a href="about.html" class="primary-link">musing</a>
-        <a href="credits.html" class="primary-link">who</a>
-        <a href="contact.html" class="primary-link">c'mere</a>
-        <a href="nymphs.html" class="primary-link">nymphs</a>
-    </nav>
-<div class="container-fluid" style="background:transparent url(img/taste2.svg) no-repeat center center /cover">
-    <div class="row justify-content-md-center">
-        <div class="col-md-auto">       
-        </div>
-        <div class="col-md-auto">
-            <audio class="clip" controls src="audio-clips/Show It To Me 30 sec.mp3"></audio>
-        </div>
-        <div class="col-md-auto"> 
-        </div>
+    <a href="index.html" class="primary-link"><span class="active">casa</span></a>
+    <a href="lyrics.html" class="primary-link">words</a>
+    <a href="about.html" class="primary-link">musing</a>
+    <a href="credits.html" class="primary-link">who</a>
+    <a href="contact.html" class="primary-link">c'mere</a>
+    <a href="nymphs.html" class="primary-link">nymphs</a>
+</nav>
+<div class="container-fluid" id="content">
+<div class="row align-items-center">
+    <div class="col-4"></div>
+    <div id="clip" class="col-4 one">
+    <audio controls src="audio-clips/Show It To Me 30 sec.mp3"></audio>
     </div>
-    <div class="row justify-content-md-center">
-        <div class="col-md-auto"> 
-        </div>
-        <div class="col-md-auto">
-            <audio class="clip" controls src="audio-clips/She Does It All For Jesus -1 30 sec.mp3"></audio>
-        </div>
-        <div class="col-md-auto">
-        </div>
+    <div class="col-4"></div>
+</div>
+<div class="row align-items-center">
+    <div class="col-4"></div>
+    <div id="clip" class="col-4 two">
+        <audio controls src="audio-clips/Show It To Me 30 sec.mp3"></audio>
     </div>
-    <div class="row justify-content-md-center">
-        <div class="col-md-auto">
-        </div>
-        <div class="col-md-auto">
-            <audio class="clip" controls src="audio-clips/I Worship You 30 sec.mp3"></audio>
-        </div>
-        <div class="col-md-auto">
-        </div>
+    <div class="col-4"></div>
+</div>
+<div class="row align-items-center">
+    <div class="col-4"></div>
+    <div id="clip" class="col-4">
+        <audio controls src="audio-clips/Show It To Me 30 sec.mp3"></audio>
     </div>
-    <div class="row justify-content-md-center">
-        <div class="col-md-auto">
-        </div>
-        <div class="col-md-auto">
-            <audio class="clip" controls src="audio-clips/I Feel Beautiful 30 sec.mp3"></audio>
-        </div>
-        <div class="col-md-auto">
-        </div>
+    <div class="col-4"></div>
+</div>
+<div class="row align-items-center">
+    <div class="col-4"></div>
+    <div id="clip" class="col-4">
+        <audio controls src="audio-clips/Show It To Me 30 sec.mp3"></audio>
     </div>
-    <div class="row justify-content-md-center">
-        <div class="col-md-auto">
-        </div>
-        <div class="col-md-auto">
-            <audio class="clip" controls src="audio-clips/Don't You Know 30 sec.mp3"></audio>
-        </div>
-        <div class="col-md-auto">
-        </div>
+    <div class="col-4"></div>
+</div>
+<div class="row align-items-center">
+    <div class="col-4"></div>
+    <div id="clip" class="col-4">
+        <audio controls src="audio-clips/Show It To Me 30 sec.mp3"></audio>
     </div>
-    <div class="row justify-content-md-center">
-        <div class="col-md-auto">
-        </div>
-        <div class="col-md-auto">
-            <audio class="clip" controls src="audio-clips/Desire-30.mp3"></audio>
-        </div>
-        <div class="col-md-auto">
-        </div>
+    <div class="col-4"></div>
+</div>
+<div class="row align-items-center">
+    <div class="col-4"></div>
+    <div id="clip" class="col-4">
+        <audio controls src="audio-clips/Show It To Me 30 sec.mp3"></audio>
     </div>
-    <div class="row justify-content-md-center">
-        <div class="col-md-auto">
-        </div>
-        <div class="col-md-auto">
-            <audio class="clip" controls src="audio-clips/Girl Like Her 30 sec.mp3"></audio>
-        </div>
-        <div class="col-md-auto">
-        </div>
+    <div class="col-4"></div>
+</div>
+<div class="row align-items-center">
+    <div class="col-4"></div>
+    <div id="clip" class="col-4">
+        <audio controls src="audio-clips/Show It To Me 30 sec.mp3"></audio>
     </div>
-    <div class="row justify-content-md-center">
-        <div class="col-md-auto"> 
-        </div>
-        <div class="col-md-auto">
-            <audio class="clip" controls src="audio-clips/Hey You-1 30 sec.mp3"></audio>
-        </div>
-        <div class="col-md-auto">
-        </div>
+    <div class="col-4"></div>
+</div>
+<div class="row align-items-center">
+    <div class="col-4"></div>
+    <div id="clip" class="col-4">
+        <audio controls src="audio-clips/Show It To Me 30 sec.mp3"></audio>
     </div>
-    <div class="row justify-content-md-center">
-        <div class="col-md-auto">
-        </div>
-        <div class="col-md-auto">
-        <audio class="clip" controls src="audio-clips/So Hard 30 sec.mp3"></audio>
-        </div>
-        <div class="col-md-auto">
-        </div>
+    <div class="col-4"></div>
+</div>
+<div class="row align-items-center">
+    <div class="col-4"></div>
+    <div id="clip" class="col-4">
+        <audio controls src="audio-clips/Show It To Me 30 sec.mp3"></audio>
     </div>
-    <div class="row justify-content-md-center">
-        <div class="col-md-auto">
-        </div>
-        <div class="col-md-auto">
-            <audio class="clip" controls src="audio-clips/Sun And Rain -2 30 sec.mp3">
-        </div>
-        <div class="col-md-auto">
-        </div>
+    <div class="col-4"></div>
+</div>
+<div class="row align-items-center">
+    <div class="col-4"></div>
+    <div id="clip" class="col-4">
+        <audio controls src="audio-clips/Show It To Me 30 sec.mp3"></audio>
     </div>
-    <div class="row justify-content-md-center">
-        <div class="col-md-auto">  
-        </div>
-        <div class="col-md-auto">
-            <audio class="clip" controls src="audio-clips/Even If 30 sec.mp3">
-        </div>
-        <div class="col-md-auto">
-        </div>
+    <div class="col-4"></div>
+</div>
+<div class="row align-items-center">
+    <div class="col-4"></div>
+    <div id="clip" class="col-4">
+        <audio controls src="audio-clips/Show It To Me 30 sec.mp3"></audio>
     </div>
-    <div class="row justify-content-md-center">
-        <div class="col-md-auto">
-        </div>
-        <div class="col-md-auto">
-            <audio class="clip" controls src="audio-clips/Diamond-Time-30.mp3"></audio>
-        </div>
-        <div class="col-md-auto">
-        </div>
+    <div class="col-4"></div>
+</div>
+<div class="row align-items-center">
+    <div class="col-4"></div>
+    <div id="clip" class="col-4">
+        <audio controls src="audio-clips/Show It To Me 30 sec.mp3"></audio>
     </div>
-    <div class="row justify-content-md-center">
-        <div class="col-md-auto">
-        </div>
-        <div class="col-md-auto">
-            <audio class="clip" controls src="audio-clips/Queen 30 sec.mp3"></audio>
-        </div>
-        <div class="col-md-auto">
-        </div>
+    <div class="col-4"></div>
+</div>
+<div class="row align-items-center">
+    <div class="col-4"></div>
+    <div id="clip" class="col-4">
+        <audio controls src="audio-clips/Show It To Me 30 sec.mp3"></audio>
     </div>
-    <div class="row justify-content-md-center">
-        <div class="col-md-auto">
-        </div>
-        <div class="col-md-auto">
-            <audio class="clip" controls src="audio-clips/Mr. Man -2 30 sec.mp3"></audio>
-        </div>
-        <div class="col-md-auto">
-        </div>
+    <div class="col-4"></div>
+</div>
+<div class="row align-items-center">
+    <div class="col-4"></div>
+    <div id="clip" class="col-4">
+        <audio controls src="audio-clips/Show It To Me 30 sec.mp3"></audio>
     </div>
-    <div class="row justify-content-md-center">
-        <div class="col-md-auto">
-        </div>
-        <div class="col-md-auto">
-            <audio class="clip" controls src="audio-clips/I Fell -2 30 sec.mp3"></audio>
-        </div>
-        <div class="col-md-auto">
-        </div>
+    <div class="col-4"></div>
+</div>
+<div class="row align-items-center">
+    <div class="col-4"></div>
+    <div id="clip" class="col-4">
+        <audio controls src="audio-clips/Show It To Me 30 sec.mp3"></audio>
     </div>
+    <div class="col-4"></div>
+</div>
 </div>
 <div class="container">
-    <div class="row justify-content-md-center">
-        <div class="col-md-auto">
-            1 of 3
-        </div>
-        <div class="col-md-auto">
-            Variable width content
-        </div>
-        <div class="col-md-auto">
-            3 of 3
-        </div>
-    </div>
+            <p>
+            in stores now: <a href="https://www.amazon.com/Brood-X-Explicit-Cicada-Project/dp/B096X8PTVM">amazon music</a>,<a href="">anghami</a>,<a href="">medianet</a>,<a href="">boomplay (beta)</a>,<a href="">deezer</a>, <a href="">instagram/facebook</a>,<a href="https://music.youtube.com/playlist?list=OLAK5uy_n0A1csuUmoSHPLhVL09MSVO33zIsIAdF4">youtube music</a>, 
+            <a href="https://www.iheart.com/artist/cicada-project-36387774/albums/brood-x-136600890/">iheartradio</a>,<a href="https://www.claromusica.com/album/19846722/MX">claro música</a>,<a href="https://music.apple.com/us/album/brood-x/1571435269">itunes</a>,<a href="">kkbox</a>,<a href="https://music.163.com/#/artist?id=48398491">netease</a>,<a href="">pandora</a>,<a href="">JioSaavn</a>,<a href="https://www.shazam.com/artist/212977479/cicada-project">shazam</a>,<a href="https://open.spotify.com/album/1cMBADKyaGv4lZIBVBOhHZ">spotify</a>,<a href="">tencent</a>,<a href="https://store.tidal.com/us/album/187020337">tidal</a>, 
+            <a href="">tiktok/resso</a>,<a href="">triller (beta)</a>,<a href="">soundtrack by twitch</a>, and<a href="">yandex music (beta)</a>.  
+            </p>
 </div>
 </body>
 </html>
