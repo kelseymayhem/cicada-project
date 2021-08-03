@@ -14,8 +14,9 @@ p {
 }
 
 nav {
-  justify-content: space-evenly;
+  justify-content: left;
   flex-wrap: nowrap !important;
+  overflow: auto;
   text-align: center !important;
   font-family: "American Typewriter", sans-serif !important;
   color: #e2d6bf !important;
