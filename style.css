@@ -26,10 +26,15 @@ nav {
 
 a {
   cursor: default;
+  text-decoration: none;
+  color: #ecdec2;
 }
 
 a:hover {
   cursor: default;
+  color: #8a9fc0 !important;
+  cursor: default;
+  font-size: larger;
 }
 
 cursor:hover {
