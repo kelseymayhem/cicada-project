@@ -3,12 +3,12 @@ body {
 }
 
 h1 {
-  font-family: "American Typewriter", sans-serif;
+  font-family: "American Typewriter ITC W01 Md";
   padding-left: 25px;
 }
 
 p {
-  font-family: "American Typewriter", sans-serif !important;
+  font-family: "American Typewriter ITC W01 Md";
   color: #e2d6bf !important;
   text-align: center;
 }
@@ -18,7 +18,7 @@ nav {
   flex-wrap: nowrap !important;
   overflow: auto;
   text-align: center !important;
-  font-family: "American Typewriter", sans-serif !important;
+  font-family: "American Typewriter ITC W01 Md";
   color: #e2d6bf !important;
   background-color: #4c2e1a !important;
   text-transform: lowercase !important;
@@ -47,7 +47,7 @@ nav:hover {
 
 .primary-link {
   overflow: auto;
-  font-family: "American Typewriter", sans-serif !important;
+  font-family: "American Typewriter ITC W01 Md";
   color: #ecdec2 !important;
   text-decoration: none;
   padding-left: 20px;
