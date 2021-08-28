@@ -12,61 +12,73 @@ p {
   color: #e2d6bf !important;
   text-align: center;
 }
-
-nav {
-  justify-content: left;
-  flex-wrap: nowrap !important;
-  overflow: auto;
-  text-align: center !important;
-  font-family: "American Typewriter ITC W01 Md";
-  color: #e2d6bf !important;
-  background-color: #4c2e1a !important;
-  text-transform: lowercase !important;
+.navbar-text {
+  text-align: center;
+  justify-content: center;
 }
-
+@media all and (min-width: 1441px) and (max-width: 2560px) {
+  a.primary-link {
+    font-family: "American Typewriter ITC W01 Md";
+    text-align: center;
+    padding-left: 96px;
+    padding-right: 30px;
+    font-size: 32px;
+    text-decoration: none;
+    color: #ecdec2;
+  }
+}
+@media all and (min-width: 1025px) and (max-width: 1440px) {
+  a.primary-link {
+    font-family: "American Typewriter ITC W01 Md";
+    text-align: center;
+    padding-left: 66px;
+    padding-right: 0px;
+    font-size: 30px;
+    color: #ecdec2;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  a.primary-link {
+    font-family: "American Typewriter ITC W01 Md";
+    text-align: center;
+    padding-left: 56px;
+    padding-right: 0px;
+    font-size: 26px;
+    color: #ecdec2;
+  }
+}
+@media all and (min-width: 481px) and (max-width: 768px) {
+  a.primary-link {
+    font-family: "American Typewriter ITC W01 Md";
+    text-align: center;
+    padding-left: 26px;
+    padding-right: 24px;
+    color: #ecdec2;
+  }
+}
+@media all and (min-width: 260px) and (max-width: 480px) {
+  a.primary-link {
+    font-family: "American Typewriter ITC W01 Md";
+    text-align: center;
+    padding-left: 6px;
+    padding-right: 0px;
+    font-size: 14px;
+    color: #ecdec2;
+  }
+}
 a {
   cursor: default;
   text-decoration: none;
   color: #ecdec2;
 }
-
 a:hover {
   cursor: default;
   color: #8a9fc0 !important;
-  cursor: default;
+  text-decoration: none;
 }
-
 cursor:hover {
   cursor: default;
 }
-
 nav:hover {
   cursor: default;
-}
-
-.primary-link {
-  overflow: auto;
-  font-family: "American Typewriter ITC W01 Md";
-  color: #ecdec2 !important;
-  text-decoration: none;
-  padding-left: 20px;
-  padding-right: 15px;
-}
-
-.primary-link:hover {
-  color: #734423;
-}
-
-.lyric-links {
-  text-decoration: none;
-  color: black;
-  line-height: 4px;
-}
-
-.lyric-links:hover {
-  color: #c2a26c;
-}
-
-.wrap {
-  padding: 15px;
 }
