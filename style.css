@@ -15,6 +15,7 @@ p {
 .navbar-text {
   text-align: center;
   justify-content: center;
+  text-decoration: none;
 }
 @media all and (min-width: 1441px) and (max-width: 2560px) {
   a.primary-link {
@@ -72,13 +73,13 @@ p {
 }
 a {
   cursor: default;
-  text-decoration: none;
+  text-decoration: none !important;
   color: #ecdec2;
 }
 a:hover {
   cursor: default;
   color: #8a9fc0 !important;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 cursor:hover {
   cursor: default;
