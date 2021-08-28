@@ -34,6 +34,7 @@ p {
     padding-left: 66px;
     padding-right: 0px;
     font-size: 30px;
+    text-decoration: none;
     color: #ecdec2;
   }
 }
@@ -44,6 +45,7 @@ p {
     padding-left: 56px;
     padding-right: 0px;
     font-size: 26px;
+    text-decoration: none;
     color: #ecdec2;
   }
 }
@@ -53,6 +55,7 @@ p {
     text-align: center;
     padding-left: 26px;
     padding-right: 24px;
+    text-decoration: none;
     color: #ecdec2;
   }
 }
@@ -63,6 +66,7 @@ p {
     padding-left: 6px;
     padding-right: 0px;
     font-size: 14px;
+    text-decoration: none;
     color: #ecdec2;
   }
 }
