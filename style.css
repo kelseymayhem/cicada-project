@@ -74,7 +74,7 @@ p {
 a {
   cursor: default;
   text-decoration: none !important;
-  color: #ecdec2;
+  color: #ecdec2 !important;
 }
 a:hover {
   cursor: default;
