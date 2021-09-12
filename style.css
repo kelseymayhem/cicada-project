@@ -35,8 +35,8 @@ p {
     min-height: 100%;
   }
   .listen {
-    padding-top: 200px;
-    padding-bottom: 50px;
+    padding-top: 570px;
+    padding-bottom: 550px;
   }
 }
 @media all and (min-width: 1025px) and (max-width: 1440px) {
@@ -49,6 +49,17 @@ p {
     text-decoration: none;
     color: #ecdec2;
   }
+  #content {
+    background-image: url(img/taste-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top center;
+    min-height: 100%;
+  }
+  .listen {
+    padding-top: 325px;
+    padding-bottom: 250px;
+  }
 }
 @media all and (min-width: 769px) and (max-width: 1024px) {
   a.primary-link {
@@ -59,6 +70,17 @@ p {
     font-size: 26px;
     text-decoration: none;
     color: #ecdec2;
+  }
+  #content {
+    background-image: url(img/taste-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top center;
+    min-height: 100%;
+  }
+  .listen {
+    padding-top: 325px;
+    padding-bottom: 250px;
   }
 }
 @media all and (min-width: 481px) and (max-width: 768px) {
