@@ -27,6 +27,17 @@ p {
     text-decoration: none;
     color: #ecdec2;
   }
+  #content {
+    background-image: url(img/taste-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top center;
+    min-height: 100%;
+  }
+  .listen {
+    padding-top: 200px;
+    padding-bottom: 50px;
+  }
 }
 @media all and (min-width: 1025px) and (max-width: 1440px) {
   a.primary-link {
@@ -56,8 +67,20 @@ p {
     text-align: center;
     padding-left: 26px;
     padding-right: 24px;
+    font-size: 20px;
     text-decoration: none;
     color: #ecdec2;
+  }
+  #content {
+    background-image: url(img/taste-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top center;
+    min-height: 100%;
+  }
+  .listen {
+    padding-top: 200px;
+    padding-bottom: 50px;
   }
 }
 @media all and (min-width: 260px) and (max-width: 480px) {
