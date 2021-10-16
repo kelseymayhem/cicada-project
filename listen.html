@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>cicada project</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="demo-async.css">
@@ -29,15 +29,12 @@ text-decoration: none !important;
 audio {
 min-height: .8em;
 max-height: 1em;
-max-width: 50vw;
+max-width: 13vw;
 opacity: 25%;
-text-align: center;
+text-align: right;
 }
 audio:hover {
 cursor: default;
-}
-p {
-font-size: 12px;
 }
 .lyrics-1 {
 font-family: "American Typewriter ITC W01 Md";
@@ -49,7 +46,7 @@ font-size: 14px
 }
 .lyrics-two {
 font-family: "American Typewriter ITC W01 Md";
-font-size: 10px;
+font-size: 14px;
 }
 #content {
 background-color: #4c2e1b !important;
@@ -58,34 +55,8 @@ background-size: 100%;
 background-position: top center;
 min-height: 100%;
 }
-.listen {
-display: block;
-margin: 0 auto;
-}
 .active {
 color: #8A9FC0 !important;
-}
-@media all and (min-width: 1441px) and (max-width: 2560px) {
-  a.primary-link {
-    font-family: "American Typewriter ITC W01 Md";
-    text-align: center;
-    padding-left: 96px;
-    padding-right: 30px;
-    font-size: 32px;
-    text-decoration: none;
-    color: #ecdec2;
-  }
-  #content {
-    background-color: #4c2e1b !important;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: top center;
-    min-height: 100%;
-  }
-  .listen {
-    padding-top: 570px;
-    padding-bottom: 550px;
-  }
 }
 </style>
 <script type="text/javascript">
@@ -108,7 +79,6 @@ src: url("Fonts/1564257/b98e947d-c7f0-4a56-b21a-cac5a0826cc8.woff2") format("wof
 </style>
 </head>
 <body>
-<div class="container-fluid">
 <nav class="navbar-text">
 <a href="index.html" class="primary-link"><span class="active">casa</span></a>
 <a href="lyrics.html" class="primary-link">words</a>
@@ -117,11 +87,11 @@ src: url("Fonts/1564257/b98e947d-c7f0-4a56-b21a-cac5a0826cc8.woff2") format("wof
 <a href="contact.html" class="primary-link">c'mere</a>
 <a href="nymphs.html" class="primary-link">nymphs</a>
 </nav>
-</div>
 <div class="container-fluid" id="content">
 <div class="row">
-<div class="col-6"><a href="show-it-to-me.html"><span class="lyrics-1">01.show it to me</span></a></div>
-<div class="col-6 one" id="clip"><audio controls src="audio-clips/Show It To Me 30 sec.mp3"></audio></div>
+<div class="col-4"><a href="show-it-to-me.html"><span class="lyrics-1">01.show it to me</span></a></div>
+<div class="col-4"></div>
+<div class="col-4 one" id="clip"><audio controls src="audio-clips/Show It To Me 30 sec.mp3"></audio></div>
 </div>
 <div class="row align-items-center">
 <div class="col-6"><a href="she-does-it-all-for-jesus.html"><span class="lyrics-two">02. she does it all for jesus</span></a></div>
