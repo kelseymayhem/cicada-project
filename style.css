@@ -16,6 +16,17 @@ p {
   justify-content: center;
   text-decoration: none;
 }
+.mayhem {
+  text-align: center;
+  font-size: 8px;
+  color: #ecdec2;
+}
+
+.mayhem a:hover {
+  font-size: 14px;
+  color: #8a9fc0 !important;
+  cursor: default;
+}
 a {
   cursor: default;
   text-decoration: none !important;
