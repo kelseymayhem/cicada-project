@@ -18,7 +18,7 @@ p {
 }
 @media (min-width: 768px) {
   .navbar {
-    font-size: xx-large;
+    font-size: large;
   }
 }
 .mayhem {
