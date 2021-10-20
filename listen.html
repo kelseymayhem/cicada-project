@@ -1,249 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cicada project</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="demo-async.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <style>
-        body {
-            background-color: #4c2e1b;
-        }
-
-        a {
-            cursor: default;
-            text-decoration: none !important;
-            color: #ecdec2 !important;
-        }
-
-        a:hover {
-            cursor: default;
-            color: #8a9fc0 !important;
-            text-decoration: none !important;
-        }
-
-        audio {
-            min-height: .8em;
-            max-height: 1em;
-            max-width: 13vw;
-            opacity: 35%;
-            text-align: right;
-        }
-
-        audio:hover {
-            cursor: default;
-        }
-
-        .lyrics {
-            font-family: "American Typewriter ITC W01 Md";
-        }
-
-        .active {
-            color: #8A9FC0 !important;
-        }
-
-        @media (min-width: 1600px) {
-            a.primary-link {
-                font-family: "American Typewriter ITC W01 Md";
-                text-decoration: none;
-                color: #ecdec2;
-                text-align: center;
-            }
-
-            .lyrics {
-                font-size: 50px;
-                color: #1D3156;
-            }
-
-            .row {
-                padding-top: 25%;
-                padding-bottom: 25%;
-            }
-
-            #content {
-                background-image: url(img/taste-mobile.jpg);
-                background-repeat: no-repeat;
-                background-size: 100%;
-                background-position: top center;
-                min-height: 100%;
-            }
-
-            #track-listing {
-                padding-top: 25%;
-                padding-bottom: 10%;
-            }
-        }
-
-        @media (min-width: 1440px) {
-            a.primary-link {
-                font-family: "American Typewriter ITC W01 Md";
-                text-decoration: none;
-                color: #ecdec2;
-            }
-
-            .lyrics {
-                font-size: 30px;
-                color: #1D3156;
-            }
-
-            #content {
-                background-image: url(img/taste-mobile.jpg);
-                background-repeat: no-repeat;
-                background-size: 100%;
-                background-position: top center;
-                min-height: 100%;
-            }
-
-            #track-listing {
-                padding-top: 25%;
-                padding-bottom: 10%;
-            }
-        }
-
-        @media (min-width: 1200px) {
-            a.primary-link {
-                font-family: "American Typewriter ITC W01 Md";
-                text-decoration: none;
-                color: #ecdec2;
-            }
-
-            .lyrics {
-                font-size: 30px;
-                color: #1D3156;
-            }
-
-            #content {
-                background-image: url(img/taste-mobile.jpg);
-                background-repeat: no-repeat;
-                background-size: 100%;
-                background-position: top center;
-                min-height: 100%;
-            }
-        }
-
-        @media (min-width: 1024px) {
-            a.primary-link {
-                font-family: "American Typewriter ITC W01 Md";
-                text-decoration: none;
-                color: #ecdec2;
-            }
-
-            .lyrics {
-                font-size: 24px;
-                color: #1D3156;
-            }
-
-            .row {
-                padding-top: 2%;
-                padding-bottom: 2%;
-            }
-
-            #content {
-                background-image: url(img/taste-mobile.jpg);
-                background-repeat: no-repeat;
-                background-size: 100%;
-                background-position: top center;
-                min-height: 100%;
-            }
-        }
-
-        @media (min-width: 992px) {
-            a.primary-link {
-                font-family: "American Typewriter ITC W01 Md";
-                text-decoration: none;
-                color: #ecdec2;
-            }
-
-            .lyrics {
-                font-size: 24px;
-                color: #1D3156;
-            }
-
-            .row {
-                padding-top: 2%;
-                padding-bottom: 2%;
-            }
-
-            #content {
-                background-image: url(img/taste-mobile.jpg);
-                background-repeat: no-repeat;
-                background-size: 100%;
-                background-position: top center;
-                min-height: 100%;
-            }
-        }
-
-        @media (min-width: 768px) {
-            a.primary-link {
-                font-family: "American Typewriter ITC W01 Md";
-                text-decoration: none;
-                color: #ecdec2;
-            }
-
-            .lyrics {
-                font-size: 22px;
-                color: #1D3156;
-            }
-
-            .row {
-                padding-top: 5%;
-                padding-bottom: 5%;
-            }
-
-            #content {
-                background-image: url(img/taste-mobile.jpg);
-                background-repeat: no-repeat;
-                background-size: 100%;
-                background-position: top center;
-                min-height: 100%;
-            }
-        }
-
-        @media (min-width: 576px) {
-            a.primary-link {
-                font-family: "American Typewriter ITC W01 Md";
-                text-align: center;
-                padding-left: 26px;
-                padding-right: 24px;
-                font-size: 20px;
-                text-decoration: none;
-                color: #ecdec2;
-            }
-
-            #content {
-                background-image: url(img/taste-mobile.jpg);
-                background-repeat: no-repeat;
-                background-size: 100%;
-                background-position: top center;
-                min-height: 100%;
-            }
-
-        }
-
-        @media (min-width: 1px) {
-            a.primary-link {
-                font-family: "American Typewriter ITC W01 Md";
-                text-align: center;
-                padding-left: 6px;
-                padding-right: 0px;
-                font-size: 14px;
-                text-decoration: none;
-                color: #ecdec2;
-            }
-
-            #content {
-                background-image: url(img/taste-mobile.jpg);
-                background-repeat: no-repeat;
-                background-size: 100%;
-                background-position: top center;
-                min-height: 100%;
-            }
-        }
-    </style>
-    <script type="text/javascript">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>cicada project</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="demo-async.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<style>
+body {
+background-color: #4c2e1b;
+}
+a {
+cursor: default;
+text-decoration: none !important;
+color: #ecdec2 !important;
+}
+a:hover {
+cursor: default;
+color: #8a9fc0 !important;
+text-decoration: none !important;
+}
+audio {
+max-height: 1em;
+max-width: 33%;
+opacity: 35%;
+text-align: right;
+padding: 0%;
+}
+audio:hover {
+cursor: default;
+}
+.active {
+color: #8A9FC0 !important;
+}
+#content {
+background-image: url(img/taste-mobile.jpg);
+background-repeat: no-repeat;
+background-size: 100%;
+background-position: top center;
+min-height: 100%;
+} 
+.lyrics {
+font-family: "American Typewriter ITC W01 Md";
+padding: 0%;
+}
+</style>
+<script type="text/javascript">
         var MTUserId = '8b4c2e69-7090-4c77-8b52-06d169c6dfb0';
         var MTFontIds = new Array();
         MTFontIds.push("1564257"); // ITC American Typewriter™ W01 Medium 
@@ -254,100 +58,57 @@
             mtTracking.src = 'mtiFontTrackingCode.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(mtTracking);
         })();
-    </script>
-    <style type="text/css">
+</script>
+<style type="text/css">
         @font-face {
             font-family: "American Typewriter ITC W01 Md";
             src: url("Fonts/1564257/b98e947d-c7f0-4a56-b21a-cac5a0826cc8.woff2") format("woff2"), url("Fonts/1564257/a27244f4-111f-4cdd-ba1d-7dc4ef39f7af.woff") format("woff");
         }
-    </style>
+</style>
 </head>
-
 <body>
 <nav class="navbar navbar-expand-xl">
-    <div class="container fluid">
+<div class="container fluid">
         <a href="index.html" class="primary-link"><span class="active">casa</span></a>
         <a href="lyrics.html" class="primary-link">words</a>
         <a href="about.html" class="primary-link">musing</a>
         <a href="credits.html" class="primary-link">who</a>
         <a href="contact.html" class="primary-link">c'mere</a>
         <a href="nymphs.html" class="primary-link">nymphs</a>
-    </div>
-    </nav>
-    <div class="container-fluid" id="content">
-        <div class="container" id="track-listing">
-            <div class="row">
-                <div class="col-10"><a href="show-it-to-me.html"><span class="lyrics">01.show it to me</span></a></div>
-                <div class="col-2 one" id="clip"><audio controls src="audio-clips/Show It To Me 30 sec.mp3"></audio>
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-10"><a href="she-does-it-all-for-jesus.html"><span class="lyrics">02. she does it all
-                            for jesus</span></a></div>
-                <div class="col-2 two" id="clip"><audio controls
-                        src="audio-clips/She Does It All For Jesus -1 30 sec.mp3"></audio></div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-10"><a href="i-worship-you.html"><span class="lyrics">03. i worship you</span></a></div>
-                <div class="col-2 three" id="clip"><audio controls src="audio-clips/I Worship You 30 sec.mp3"></audio>
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-10"><a href="i-feel-beautiful.html"><span class="lyrics">04. i feel beautiful</span></a>
-                </div>
-                <div class="col-2 four" id="clip"><audio controls src="audio-clips/I Feel Beautiful 30 sec.mp3"></audio>
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-10"><a href="dont-you-know.html"><span class="lyrics">05. don't you know</span></a>
-                </div>
-                <div class="col-2 five" id="clip"><audio controls src="audio-clips/Don't You Know 30 sec.mp3"></audio>
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-10"><a href="desire.html"><span class="lyrics">06. desire</span></a></div>
-                <div class="col-2" id="clip"><audio controls src="audio-clips/Desire-30.mp3"></audio></div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-10"><a href="girl-like-her.html"><span class="lyrics">07. girl like her</span></a></div>
-                <div class="col-2" id="clip"><audio controls src="audio-clips/Girl Like Her 30 sec.mp3"></audio></div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-10"><a href="hey-you.html"><span class="lyrics">08. hey you</span></a></div>
-                <div class="col-2" id="clip"><audio controls src="audio-clips/Hey You-1 30 sec.mp3"></audio></div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-10"><a href="so-hard.html"><span class="lyrics">09. so hard</span></a></div>
-                <div class="col-2" id="clip"><audio controls src="audio-clips/So Hard 30 sec.mp3"></audio></div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-10"><a href="sun-and-rain.html"><span class="lyrics">10. sun and rain</span></a></div>
-                <div class="col-2" id="clip"><audio controls src="audio-clips/Sun And Rain -2 30 sec.mp3"></audio></div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-10"><a href="even-if.html"><span class="lyrics">11. even if</span></a></div>
-                <div class="col-2" id="clip"><audio controls src="audio-clips/Even If 30 sec.mp3"></audio></div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-10"><a href="diamond-time.html"><span class="lyrics">12.diamond time</span></a></div>
-                <div class="col-2" id="clip"><audio controls src="audio-clips/Diamond-Time-30.mp3"></audio></div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-10"><a href="queen.html"><span class="lyrics">13. queen</span></a></div>
-                <div class="col-2" id="clip"><audio controls src="audio-clips/Queen 30 sec.mp3"></audio></div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-10"><a href="mr-man.html" target="_blank"><span class="lyrics">14. mr man</span></a>
-                </div>
-                <div class="col-2" id="clip"><audio controls src="audio-clips/Mr. Man -2 30 sec.mp3"></audio></div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-10"><a href="i-fell.html" target="_blank"><span class="lyrics">15. i fell</span></a>
-                </div>
-                <div class="col-2" id="clip"><audio controls src="audio-clips/I Fell -2 30 sec.mp3"></audio></div>
-            </div>
-        </div>
-    </div>
+</div>
+</nav>
+<div class="container-fluid" id="content">
+    <a href="show-it-to-me.html"><span class="lyrics">01.show it to me</span></a><br>
+    <audio controls src="audio-clips/Show It To Me 30 sec.mp3"></audio><br>
+    <a href="she-does-it-all-for-jesus.html"><span class="lyrics">02. she does it all for jesus</span></a><br>
+    <audio controls src="audio-clips/She Does It All For Jesus -1 30 sec.mp3"></audio><br>
+    <a href="i-worship-you.html"><span class="lyrics">03. i worship you</span></a><br>
+    <audio controls src="audio-clips/I Worship You 30 sec.mp3"></audio><br>
+    <a href="i-feel-beautiful.html"><span class="lyrics">04. i feel beautiful</span></a><br>
+    <audio controls src="audio-clips/I Feel Beautiful 30 sec.mp3"></audio><br>
+    <a href="dont-you-know.html"><span class="lyrics">05. don't you know</span></a><br>
+    <audio controls src="audio-clips/Don't You Know 30 sec.mp3"></audio><br>
+    <a href="desire.html"><span class="lyrics">06. desire</span></a><br>
+    <audio controls src="audio-clips/Desire-30.mp3"></audio><br>
+    <a href="girl-like-her.html"><span class="lyrics">07. girl like her</span></a><br>
+    <audio controls src="audio-clips/Girl Like Her 30 sec.mp3"></audio><br>
+    <a href="hey-you.html"><span class="lyrics">08. hey you</span></a><br>
+    <audio controls src="audio-clips/Hey You-1 30 sec.mp3"></audio><br>
+    <a href="so-hard.html"><span class="lyrics">09. so hard</span></a><br>
+    <audio controls src="audio-clips/So Hard 30 sec.mp3"></audio><br>
+    <a href="sun-and-rain.html"><span class="lyrics">10. sun and rain</span></a><br>
+    <audio controls src="audio-clips/Sun And Rain -2 30 sec.mp3"></audio><br>
+    <a href="even-if.html"><span class="lyrics">11. even if</span></a><br>
+    <audio controls src="audio-clips/Even If 30 sec.mp3"></audio><br>
+    <a href="diamond-time.html"><span class="lyrics">12.diamond time</span></a><br>
+    <audio controls src="audio-clips/Diamond-Time-30.mp3"></audio><br>
+    <a href="queen.html"><span class="lyrics">13. queen</span></a><br>
+    <audio controls src="audio-clips/Queen 30 sec.mp3"></audio><br>
+    <a href="mr-man.html" target="_blank"><span class="lyrics">14. mr man</span></a><br>
+    <audio controls src="audio-clips/Mr. Man -2 30 sec.mp3"></audio><br>
+    <a href="i-fell.html" target="_blank"><span class="lyrics">15. i fell</span></a><br>
+    <audio controls src="audio-clips/I Fell -2 30 sec.mp3"></audio><br>
+</div>
     <div class="container-fluid">
         <p>
             in stores everywhere: <a href="https://www.amazon.com/Brood-X-Explicit-Cicada-Project/dp/B096X8PTVM"
@@ -367,5 +128,4 @@
         </p>
     </div>
 </body>
-
 </html>
