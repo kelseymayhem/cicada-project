@@ -16,11 +16,6 @@ p {
   justify-content: center;
   text-decoration: none;
 }
-@media (min-width: 768px) {
-  .navbar {
-    font-size: large;
-  }
-}
 .mayhem {
   text-align: center;
   font-size: 8px;
